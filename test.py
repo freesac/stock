@@ -1,6 +1,6 @@
 import tushare as ts
 ts.set_token('577c33e4d462eba6c110d77e39408eaa08f6e91c7e2cb4275fad192e374b1ddb')
-print('this is only a test')
+print('this is just only a test')
 st = ts.Market()
 df = st.MktEqud(tradeDate='20150925', field='ticker,secShortName,preClosePrice,openPrice,highestPrice,lowestPrice,closePrice,turnoverVol,turnoverRate')
 df['ticker'] = df['ticker'].map(lambda x: str(x).zfill(6))
